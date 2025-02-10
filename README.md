@@ -81,7 +81,7 @@ Com o ambiente preparado, os seguintes passos são para a instalação, compila�
   ```console
   poetry install
   ```
-3. Execute o arquivo `main.py` para gerar o arquivo .CSV dos nós (para isso, será necessário baixar a pasta derivatives que contém os dados .SET, diponíveis no [link](https://openneuro.org/datasets/ds004504/versions/1.0.8) e adicio), com o comando:
+3. Execute o arquivo `main.py` para gerar o arquivo .CSV dos nós (para isso, será necessário baixar a pasta derivatives que contém os dados .SET, diponíveis no [link](https://openneuro.org/datasets/ds004504/versions/1.0.8) e adicioná-la na pasta `datasets`), com o comando:
   ```console
   poetry run python src/main.py
   ```
