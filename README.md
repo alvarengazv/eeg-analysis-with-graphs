@@ -77,19 +77,23 @@ Com o ambiente preparado, os seguintes passos são para a instalação, compila�
   git clone https://github.com/alvarengazv/eeg-analysis-with-graphs.git
   cd eeg-analysis-with-graphs
   ```
-2. Execute o arquivo `main.py` para gerar o arquivo .CSV dos nós (para isso, será necessário baixar a pasta derivatives que contém os dados .SET, diponíveis no [link](https://openneuro.org/datasets/ds004504/versions/1.0.8) e adicio), com o comando:
+2. Instale as dependências do projeto com o comando:
+  ```console
+  poetry install
+  ```
+3. Execute o arquivo `main.py` para gerar o arquivo .CSV dos nós (para isso, será necessário baixar a pasta derivatives que contém os dados .SET, diponíveis no [link](https://openneuro.org/datasets/ds004504/versions/1.0.8) e adicio), com o comando:
   ```console
   poetry run python src/main.py
   ```
-3. Execute o arquivo `generate-edges.py` para gerar o arquivo .CSV das arestas, com o comando:
+2. Execute o arquivo `generate-edges.py` para gerar o arquivo .CSV das arestas, com o comando:
   ```console
   poetry run python src/generate-edges.py
   ```
-4. Execute o arquivo `find-communities-louvain.py` para gerar as imagens .PNG dos grafos com as comunidades encontradas pelo método de Louvain e gráficos gerados para análise, com o comando:
+3. Execute o arquivo `find-communities-louvain.py` para gerar as imagens .PNG dos grafos com as comunidades encontradas pelo método de Louvain e gráficos gerados para análise, com o comando:
   ```console
   poetry run python src/find-communities-louvain.py
   ```
-5. Opcionalmente, pode-se acessar o arquivo `grafos-eeg.gephi` para visualizar os grafos gerados no software Gephi. Para tal, é necessário instalar o software Gephi, disponível no [link](https://gephi.org/).
+4. Opcionalmente, pode-se acessar o arquivo `grafos-eeg.gephi` para visualizar os grafos gerados no software Gephi. Para tal, é necessário instalar o software Gephi, disponível no [link](https://gephi.org/).
   
 O programa estará pronto para ser testado.
 
