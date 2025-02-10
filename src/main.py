@@ -3,7 +3,6 @@ import mne
 import pandas as pd
 import numpy as np
 from scipy.signal import welch
-import matplotlib.pyplot as plt
 
 def extract_participant_id(file_name):
     """
